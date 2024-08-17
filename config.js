@@ -2,7 +2,7 @@
 // "MC" refers to Minecraft in the comments for convenience.
 module.exports = {
   bot: {
-    token: 'your-bot-token-here',
+    token: 'MTI3NDQ1ODU1MTc2MjU1MDkwOA.GgNSZH.mKu0AAe6zKdJd5rsDonC4o27cJhtwU3a_GztKo',
     // Automatically updates the bot's status and activity.
     presence: {
       enabled: true,
@@ -19,13 +19,13 @@ module.exports = {
     },
   },
   mcserver: {
-    ip: 'demo.mcstatus.io', // IP address of the MC server.
+    ip: 'flat.spifftopia.net', // IP address of the MC server.
     port: 25565, // Port number of the MC server. Use Query Port in Java for the full player list.
     type: 'java', // Type of MC server: "java" or "bedrock".
-    name: 'Demo Server', // Name of the MC server.
-    version: 'Requires 1.8 - 1.20', // Version of the MC server.
-    icon: 'https://i.imgur.com/6Msem8Q.png', // URL of the MC server icon. How to set it: https://tinyurl.com/iconurl
-    site: 'https://nooberpro.gitbook.io/', // URL of the MC server or vote website. Leave blank to disable site commands.
+    name: 'Spifftopia', // Name of the MC server.
+    version: 'Requires 1.20.4', // Version of the MC server.
+    icon: 'https://yt3.googleusercontent.com/ytc/AIdro_lDhKIR-Effrsgdl5uwyXNAHwRH3euYOavxRZpGAJQMGEw=s160-c-k-c0x00ffffff-no-rj', // URL of the MC server icon. How to set it: https://tinyurl.com/iconurl
+    site: '', // URL of the MC server or vote website. Leave blank to disable site commands.
   },
 
   // Bot settings.
@@ -58,8 +58,8 @@ module.exports = {
 
   // Automatically updates the MC server status in a channel in real-time.
   autoChangeStatus: {
-    enabled: false,
-    updateInterval: 60, // Interval between status updates in seconds. Recommended: above 60.
+    enabled: true,
+    updateInterval: 5, // Interval between status updates in seconds. Recommended: above 60.
     adminOnly: true, // Only admins with the "Manage Channel" permission can set the status message.
     // Show player head emoji in the player list. Only for Java and in adminOnly mode.
     playerAvatarEmoji: {
@@ -74,7 +74,7 @@ module.exports = {
   // Shows the player count of the MC server in the channel name.
   playerCountCH: {
     enabled: false,
-    guildID: 'your-guild-id-here', // Server ID for creating/editing channel stats.
+    guildID: '1274456826133610599', // Server ID for creating/editing channel stats.
     channelId: '', // Channel ID for editing the player count. If no ID is provided, the bot will create the channel itself.
     // {playeronline} and {playermax} display the current and maximum number of players.
     onlineText: '🟢 {playeronline}/{playermax} active players',
